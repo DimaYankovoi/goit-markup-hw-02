@@ -9,11 +9,11 @@ body {
   color: var(--title-color);
 }
 
-li {
+.list {
   list-style: none;
 }
 
-a {
+.link {
   text-decoration: none;
 }
 
@@ -139,7 +139,7 @@ a {
 /* footer */
 
 .footer {
-  background-color: gray;
+  background-color: #2f303a;
 }
 
 .footer-logo {
@@ -167,4 +167,38 @@ a {
 .address-mail,
 .address-tel {
   color: rgba(255, 255, 255, 0.6);
+}
+
+/*                      PORTFOLIO                       */
+
+/* Works */
+
+.filter-btn {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  cursor: pointer;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+  color: #ffffff;
+  background-color: var(--accent-color);
+}
+
+.works-item-title {
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+}
+
+.works-item-text {
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.03em;
+  color: var(--text-color);
 }
