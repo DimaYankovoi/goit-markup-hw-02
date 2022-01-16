@@ -1,7 +1,9 @@
 :root {
   --accent-color: #2196f3;
   --text-color: #757575;
+  --second-text-color: #212121;
   --title-color: #212121;
+  --accent-text-color: #ffffff;
 }
 
 body {
@@ -42,7 +44,7 @@ body {
 }
 
 .first-logo {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .header-link {
@@ -50,7 +52,7 @@ body {
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--second-text-color);
 }
 
 .header-link:hover,
@@ -66,23 +68,27 @@ body {
 /* HERO */
 
 .hero {
+  background-color: gray;
+}
+
+.hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
-  background-color: gray;
+  color: var(--accent-text-color);
 }
 
 .hero-btn {
   font-family: Roboto;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--accent-text-color);
+  background-color: var(--accent-color);
   cursor: pointer;
 }
 
@@ -148,7 +154,7 @@ body {
   font-size: 26px;
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--accent-text-color);
 }
 
 .address-link {
@@ -156,7 +162,7 @@ body {
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--accent-text-color);
 }
 
 .address-link:hover,
@@ -180,13 +186,13 @@ body {
   line-height: calc(26 / 16);
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--second-text-color);
   cursor: pointer;
 }
 
 .filter-btn:hover,
 .filter-btn:focus {
-  color: #ffffff;
+  color: var(--accent-text-color);
   background-color: var(--accent-color);
 }
 
